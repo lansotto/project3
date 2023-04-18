@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movies - Dashboard</title>
+    <!-- REMEMBER TO CHANGE NAME OF HTML FILE TO MATCH -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <a href="#">OUR STORY / Our Details / Summary</a> <a href="#">Map</a> <a href="#">Chart Visualizations / Movie Dashboard</a>
+<head>
+
+<body>
+<!-- Navigation Bar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#OUR STORY / Our Details / Summary / Overview" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="#OUR STORY / Our Details / Summary / Overview" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OUR STORY / Our Details / Summary / Overview</a>
+        <a href="#Map" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Map</a>
+        <a href="#moviedashboard" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Chart Visualizations / Movie Dashboard</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#" class="w3-bar-item w3-button">About Us</a>
+            <a href="#" class="w3-bar-item w3-button">References</a>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+        </div>
+    </div>
+
+
+<!-- Page Content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+<!-- Chart Visualizations / Movie Dashboard -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="moviedashboard">
+        <h2 class="w3-wide">Chart Visualizations / Movies Dashboard</h2>
+        <p></p>
+    </div>
+    
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-large">
+    <!-- <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
+</footer>
+
+</body>
+</html>
+
+
+<!-- THIS IS CODE FROM BIODIVERSITY INFO -->
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Movies Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <select id="selDataset" onchange="redraw(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="./static/app.js"></script>
+  <script src="./static/bonus.js"></script>
+  
+</body>
+
+</html>
