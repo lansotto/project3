@@ -1,88 +1,88 @@
-﻿Country,Count
-Afghanistan,1
-Algeria,1
-Angola,1
-Argentina,9
-Aruba,1
-Australia,110
-Austria,6
-Belgium,25
-Bhutan,1
-Bolivia,1
-Bosnia and Herzegovina,1
-Brazil,13
-Bulgaria,4
-Cambodia,1
-Cameroon,1
-Canada,261
-Chile,2
-China,59
-Colombia,2
-Cyprus,1
-Czech Republic,24
-Denmark,20
-Dominica,2
-Dominican Republic,1
-Ecuador,1
-Egypt,1
-Fiji,1
-Finland,5
-France,306
-Germany,324
-Greece,3
-Guadaloupe,1
-Guyana,1
-Hong Kong,48
-Hungary,13
-Iceland,6
-India,54
-Indonesia,1
-Iran,4
-Ireland,37
-Israel,6
-Italy,72
-Jamaica,2
-Japan,58
-Jordan,1
-Kazakhstan,2
-Kenya,1
-Kyrgyz Republic,1
-Lebanon,1
-Libyan Arab Jamahiriya,1
-Lithuania,1
-Luxembourg,11
-Malaysia,2
-Malta,4
-Mexico,30
-Monaco,1
-Morocco,4
-Netherlands,18
-New Zealand,28
-Nigeria,1
-Norway,14
-Pakistan,3
-Panama,1
-Peru,2
-Philippines,1
-Poland,6
-Portugal,1
-Romania,12
-Russia,19
-Singapore,2
-Slovakia,2
-Slovenia,2
-South Africa,20
-South Korea,18
-Spain,71
-Sweden,19
-Switzerland,19
-Taiwan,5
-Thailand,6
-Tunisia,1
-Turkey,1
-Ukraine,1
-United Arab Emirates,14
-United Kingdom,636
-United States of America,3956
-Serbia and Montenegro,1
-Serbia,2
+﻿Country,Count,latitude,longitude
+Afghanistan,1,33.93911,67.709953
+Algeria,1,28.033886,1.659626
+Angola,1,-11.202692,17.873887
+Argentina,9,-38.416097,-63.616672
+Aruba,1,12.52111,-69.968338
+Australia,110,-25.274398,133.775136
+Austria,6,47.516231,14.550072
+Belgium,25,50.503887,4.469936
+Bhutan,1,27.514162,90.433601
+Bolivia,1,-16.290154,-63.588653
+Bosnia and Herzegovina,1,43.915886,17.679076
+Brazil,13,-14.235004,-51.92528
+Bulgaria,4,42.733883,25.48583
+Cambodia,1,12.565679,104.990963
+Cameroon,1,7.369722,12.354722
+Canada,261,56.130366,-106.346771
+Chile,2,-35.675147,-71.542969
+China,59,35.86166,104.195397
+Colombia,2,4.570868,-74.297333
+Cyprus,1,35.126413,33.429859
+Czech Republic,24,49.817492,15.472962
+Denmark,20,56.26392,9.501785
+Dominica,2,15.414999,-61.370976
+Dominican Republic,1,18.735693,-70.162651
+Ecuador,1,-1.831239,-78.183406
+Egypt,1,26.820553,30.802498
+Fiji,1,-16.578193,179.414413
+Finland,5,61.92411,25.748151
+France,306,46.227638,2.213749
+Germany,324,51.165691,10.451526
+Greece,3,39.074208,21.824312
+Guadeloupe,1,16.995971,-62.067641
+Guyana,1,4.860416,-58.93018
+Hong Kong,48,22.396428,114.109497
+Hungary,13,47.162494,19.503304
+Iceland,6,64.963051,-19.020835
+India,54,20.593684,78.96288
+Indonesia,1,-0.789275,113.921327
+Iran,4,32.427908,53.688046
+Ireland,37,53.41291,-8.24389
+Israel,6,31.046051,34.851612
+Italy,72,41.87194,12.56738
+Jamaica,2,18.109581,-77.297508
+Japan,58,36.204824,138.252924
+Jordan,1,30.585164,36.238414
+Kazakhstan,2,48.019573,66.923684
+Kenya,1,-0.023559,37.906193
+Kyrgyzstan,1,41.20438,74.766098
+Lebanon,1,33.854721,35.862285
+Libyan Arab Jamahiriya,1,26.3351,17.228331
+Lithuania,1,55.169438,23.881275
+Luxembourg,11,49.815273,6.129583
+Malaysia,2,4.210484,101.975766
+Malta,4,35.937496,14.375416
+Mexico,30,23.634501,-102.552784
+Monaco,1,43.750298,7.412841
+Morocco,4,31.791702,-7.09262
+Netherlands,18,52.132633,5.291266
+New Zealand,28,-40.900557,174.885971
+Nigeria,1,9.081999,8.675277
+Norway,14,60.472024,8.468946
+Pakistan,3,30.375321,69.345116
+Panama,1,8.537981,-80.782127
+Peru,2,-9.189967,-75.015152
+Philippines,1,12.879721,121.774017
+Poland,6,51.919438,19.145136
+Portugal,1,39.399872,-8.224454
+Romania,12,45.943161,24.96676
+Russia,19,61.52401,105.318756
+Singapore,2,1.352083,103.819836
+Slovakia,2,48.669026,19.699024
+Slovenia,2,46.151241,14.995463
+South Africa,20,-30.559482,22.937506
+South Korea,18,35.907757,127.766922
+Spain,71,40.463667,-3.74922
+Sweden,19,60.128161,18.643501
+Switzerland,19,46.818188,8.227512
+Taiwan,5,23.69781,120.960515
+Thailand,6,15.870032,100.992541
+Tunisia,1,33.886917,9.537499
+Turkey,1,38.963745,35.243322
+Ukraine,1,48.379433,31.16558
+United Arab Emirates,14,23.424076,53.847818
+United Kingdom,636,55.378051,-3.435973
+United States of America,3956,37.09024,-95.712891
+Serbia and Montenegro,1,44.016521,21.005859
+Serbia,2,44.016521,21.005859
