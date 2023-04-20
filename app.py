@@ -41,6 +41,16 @@ def plot():
 
     return render_template("plot.html")
 
+@app.route("/dashboard")
+def dashboard():
+
+    return render_template("dashboard.html")
+
+@app.route("/map")
+def map():
+
+    return render_template("map.html")
+
 @app.route("/query")
 def query():
     df2 = pd.read_sql("select * from movies where vote_average > 5.0", con=engine)

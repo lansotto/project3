@@ -1,2 +1,235 @@
-helloworld
-<a href="/plot">Plot</a>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project-3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .mySlides {display:none;}
+    </style>
+</head>
+<body>
+
+<div class="w3-container" style="text-align:center;">
+    <h2>Genres: Netflix and Chill</h2>
+</div>
+
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="http://127.0.0.1:5000/" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i><b>Netflix and Chill</b></a>
+        <div class="w3-right w3-hide-small">
+            <a href="/Users/ishasharma210/Desktop/UOT/Project 3/project3/templates/map.html" class="w3-bar-item w3-button">Map</a>
+            <a href="d/Users/ishasharma210/Desktop/UOT/Project 3/project3/templates/dashboard.html" class="w3-bar-item w3-button">Movies Dashboard</a>
+            <a href="#Contact" class="w3-bar-item w3-button">Contact</a>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">More</button>
+<div class="w3-dropdown-content w3-bar-block w3-card-4 w3-dropdown-top-left">
+  <a href="#Overview" class="w3-bar-item w3-button">Overview</a>
+  <a href="#Biases" class="w3-bar-item w3-button">Biases</a>
+  <a href="#AboutUs" class="w3-bar-item w3-button">About Us</a>
+  <a href="#Acknowledgements" class="w3-bar-item w3-button">References</a>
+</div>
+
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="w3-content w3-section" style="max-width:600px; padding:50px;">
+    <a href="https://www.netflix.com">
+        <img class="mySlides" src="https://c4.wallpaperflare.com/wallpaper/862/449/162/jack-reacher-star-wars-interstellar-movie-john-wick-wallpaper-preview.jpg" style="width: 100%">
+    </a>
+    <a href="https://www.netflix.com">
+        <img class="mySlides" src="https://wallpaperaccess.com/full/329583.jpg" style="width:100%">
+    </a>
+    <a href="https://www.netflix.com">
+        <img class="mySlides" src="https://cdn.wallpapersafari.com/86/95/Idsx01.jpg" style="width:100%">
+    </a>
+    <a href="https://www.netflix.com">
+        <img class="mySlides" src="https://wallpapercave.com/wp/wp2751453.jpg" style="width:100%">
+    </a>
+    <a href="https://www.netflix.com">
+        <img class="mySlides" src="https://images4.alphacoders.com/573/57394.jpg" style="width:100%">
+    </a>
+    <a href="https://www.netflix.com">
+        <img class="mySlides" src="https://c4.wallpaperflare.com/wallpaper/726/46/535/movies-hollywood-movies-wallpaper-preview.jpg" style="width:100%">
+
+      </a>
+    </div>
+  
+  <script>
+ 
+
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 3 seconds
+  }
+  </script>
+
+    <div id="Overview" class="w3-container" padding:50px;>
+        <h2 style="text-align: center; color: #ff1e1e; font-family: Arial, sans-serif;">Overview</h2>
+    <p style="font-size: 20px;">The Movies Informatics project is a data visualization project that provides an overview of movie genres from 1916 to 2017. The data for this project was obtained from <a href="https://www.kaggle.com/">Kaggle</a> and plotted in a visual manner, allowing users to easily compare and analyze the trends and patterns of the movie industry over the years. This project aims to provide valuable insights into the evolution of movie genres and the factors that influence their success, as well as to serve as a useful resource for researchers, movie enthusiasts, and industry professionals alike.</p>
+    
+    <h2 style="text-align: center; color: #ff1e1e; font-family: Arial, sans-serif;">Tools & Technology</h2>
+    <p style="font-size: 20px;">Below are some of the tools and technologies used to create this repository:</p>
+
+    <ul style="font-size: 20px;">
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>MongoDB</li>
+        <li>HTML</li>
+    </ul>
+
+    <div id="Biases" class="w3-container"></div>
+<h2 style="text-align: center; color: #ff1e1e; font-family: Arial, sans-serif;">Biases & Further Considerations</h2>
+<p style="font-size: 20px;">Some factors that we should consider when analyzing this dataset.</p>
+<ul style="font-size: 20px;">
+    <li>Revenue currency is not provided</li>
+    <li>Data quality analysis has not been performed</li>
+    <li>Missing budgets were provided a value of zero</li>
+    <li>Selection bias: dataset is not a full depiction of all movies (i.e., independent films)</li>
+</ul>
+
+
+    <div id="Acknowledgements" class="w3-container"></div>
+    <h2 style="text-align: center; color: #ff1e1e; font-family: Arial, sans-serif;">Acknowledgements</h2>
+    <p style="font-size: 20px;">The dataset was obtained from <a href="https://www.kaggle.com/">Kaggle</a>, which had been generated from The Movie Database API.
+        A further thanks goes to all the instructors through the University of Toronto Data Analytics program.</p>
+
+
+    <!-- Team  -->
+    <div class="w3-container w3-padding-64 w3-center" id="team">
+        <a href="/Users/ishasharma210/Desktop/UOT/Project 3/project3/about.html">
+            <h2 id="AboutUs" style="text-align: center; color: #ff1e1e; font-family: Arial, sans-serif;">About Us</h2>
+        </a>
+        <p style="text-align: center; font-size: 1.2rem; font-weight: bold;">Meet the Players</p>
+        
+        <div class="w3-row"><br>
+    
+    
+        <div class="w3-quarter">
+            <img src="https://lh3.googleusercontent.com/pw/AJFCJaVeD7_N_VLXqfZV05QBdO-bqHYvN92FylVq94wGqsdHTDSwxMMhqnxQJxZO7gUQMcDJbdminHkVfrIH7ma6IivI_SDyyEC3VVwRP4On1FWRXY8MOeoPsy8NRRSypHLmUwWRnmcav6omQN645HUlcux_KZdPU4jzfBkpFAaqlkcWGd8prMEHAah7Lf4Rk-U8cQzTr5je-4UP2SxFPoAwbiXZtlknK0aLtufKWpVxEFVehLM9woyFCZLMwYSv7BXTvpz0y6dBeYb3LXmD0AIb7MceBlX0iMF4mT-q9692SMY6Udol9W3oFYAHWLShngFD7V2kvXxRbDhe9U6A_lAW67i7L-RY6zAXnxkwZtPNpLnwa4PhRYVAtaG8oZIrbeExUWA3JaB6VzAPqq4uUt478SQwDtw4Ke5ZEHWabcr5v2YGaH-qzFUOmjOcvfz2pL0caKOZQ53wgjlRaxQ4w00d5EIQ20nyx_Blxvdd2n4d98eUD-WW_jSgfs-6yFtuWlVYlVbFCE6Z4P6DLR9abb6Xw8XtmgefGcWQLVG8yWr7hce821Usvci7uyqMVQwCF7yLT_mr498X4aSYWAOKsTADgiNNxjQcGa1ZGO1cC8wRjeoRtbqOO5lgTABUQZsUb1n7YLjhQ823qT90vmMRoFHAd0DKQCo_tVFzOe56ROPXd-GJq52e-1iyvVJpcDRhb13c1cQz3OMsyF_v-AOhdLuND07YhHfOIY2Y5IDkVu7eHD6mMTyR6goNzxDiITsURnNk05BEXMbmWc3sqwuoTyGU1Ihf7jSS7o6H0iZH8tkyKbtUfAxpKHhIkG-VDLO9br8miXzTR6hPfxE7HkCQx4Hec25ewxLOkhyODhEsqoLWRD2I_RZknP6RfO3Ocd8IyC_vDrsNAqlWyaQoXhD2KLr09fSGjNpFxwoTG3xr3UtPVSUbDqNU91jEGzYLBta2bg=w728-h911-s-no?authuser=0" style="width:60%">
+            <h3><a href="https://www.linkedin.com/in/tiara-mardosas/"><i class="fa fa-linkedin-square w3-hover-opacity" style="margin-right:10px"></i>Tiara Mardosas</a></h3>
+            <strong><em>Olympic Athlete</em></strong>
+            <ul>
+            <li style="text-align: left;">Likes: Cliff jumping</li>
+            <li>Interesting Fact: I went hang-gliding in the Swiss Alps</li>
+            </ul>
+          </div>
+          
+    
+    <div class="w3-quarter">
+        <img src="https://media.licdn.com/dms/image/C4E03AQGWag9OdqqOZg/profile-displayphoto-shrink_800_800/0/1541381807555?e=1687392000&v=beta&t=iA-Mj8wuPShjgUxCCackADEZyT8Ro8TFtIyB25YptsI" style="width:60%">
+      <h3><a href="https://www.linkedin.com/in/lantrinh"><i class="fa fa-linkedin-square w3-hover-opacity" style="margin-right:10px"></i>Lan Trinh</a></h3>          
+      <strong><em>Financial Analyst & Wannabe Data Analyst</em></strong>
+      <ul>
+        <li style="text-align: left;">Likes: Also likes Cliff jumping</li>
+        <li style="text-align: left;">Interesting Fact: I Can’t bake a cake but makes a perfect souffle</li>
+    </ul>
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="https://media.licdn.com/dms/image/C4E03AQHzL8RumqbB7A/profile-displayphoto-shrink_800_800/0/1623192339342?e=1687392000&v=beta&t=Fp1BslU7FyW1sA52fNfixNap-JvdHQv0l3h8-aFhkac" style="width:60%">
+      <h3><a href="http://linkedin.com/in/anumta-khan/"><i class="fa fa-linkedin-square w3-hover-opacity" style="margin-right:10px"></i>Anumta Khan</a></h3>
+      <strong><em>IBM - Data Scientist</em></strong>
+      <ul>
+        <li style="text-align: left;">Likes: Cliff jumping</li>
+        <li style="text-align: left;">Interesting Fact: I Swam with Sharks</li>
+    </ul>
+    </div>
+      
+      <div class="w3-quarter">
+        <img src="https://media.licdn.com/dms/image/C5603AQFG5GDw6purSQ/profile-displayphoto-shrink_800_800/0/1635572277941?e=1687392000&v=beta&t=ihtOsSzkJb9kP8BkHyGTHmYgwfL4RsKKghgEjWSG3LY" style="width:60%">
+        <h3><a href="https://www.linkedin.com/in/tejas-sharma-68733b75/"><i class="fa fa-linkedin-square w3-hover-opacity" style="margin-right:10px"></i>Tejas Sharma</a></h3>
+        <strong><em>Ex-Sailor & Future Data Analyst</em></strong>
+        <ul>
+        <li style="text-align: left;">Likes: Sailing, Swimming, Travelling & would love to watch Tiara, Lan, Anumta do Cliff Jump</li>
+        <li>Interesting Fact: I Travelled more than 20 Countries</li>
+    </ul>
+      </div>
+
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <style>
+        #Contact {
+          background-color: #a9a9a9; /* Replace with the desired color code */
+          padding-top: 50px;
+        }
+      </style>
+    <!-- Contact Container -->
+    <style>
+        #Contact {
+          padding-top: 50px;
+        }
+      </style>
+      
+      <div class="w3-container w3-padding-64 w3-theme-l5" id="Contact">
+        <div class="w3-row">
+          <div class="w3-col m5">
+            <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+            <h3>Address</h3>
+            <p>University Of Data Analyst</p>
+            <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Toronto, CA</p>
+            <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +01 1515151515</p>
+            <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
+          </div>
+          <div class="w3-col m7">
+            <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+              <div class="w3-section">      
+                <label>Name</label>
+                <input class="w3-input" type="text" name="Name" required>
+              </div>
+              <div class="w3-section">      
+                <label>Email</label>
+                <input class="w3-input" type="text" name="Email" required>
+              </div>
+              <div class="w3-section">      
+                <label>Message</label>
+                <input class="w3-input" type="text" name="Message" required>
+              </div>  
+              <input class="w3-check" type="checkbox" checked name="Like">
+              <label>I Like it!</label>
+              <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+
+    <!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+    <h4>Follow Us</h4>
+    <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook"></i><b>F</b></a>
+    <a class="w3-button w3-large w3-teal" href="https://twitter.com/?lang=en" title="Twitter"><i class="fa fa-twitter"></i><b>t</b></a>
+    <a class="w3-button w3-large w3-teal" href="https://www.google.com/" title="Google +"><i class="fa fa-google-plus"></i><b>G</b></a>
+    <a class="w3-button w3-large w3-teal" href="https://www.instagram.com/" title="Instagram +"><i class="fa fa-instagram"></i><b>I</b></a>
+    <a class="w3-button w3-large w3-teal w3-hide-small" href="https://www.linkedin.com/" title="Linkedin"><i class="fa fa-linkedin"></i><b>L</b></a>
+    
+  
+    <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+      <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+      <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+      <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+  </footer>
+   
+</body>
+
+
+</body>
+
+</body>
+</html>
