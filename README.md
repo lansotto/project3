@@ -24,13 +24,14 @@ We wanted to draw comparisons between movie genres and determine if there are an
 
 
 Below outline some of the tools and technologies we used to create TMDB and Chill.
-    * Python
-    * Flask
-    * SQLite
-    * Javascript
-    * D3
-    * CSS
-    * HTML
+
+* Python
+* Flask
+* SQLite
+* Javascript
+* D3
+* CSS
+* HTML
 
 
 
@@ -41,12 +42,15 @@ The Python Flask API runs two main components from the 'Home' page, 'Map' and 'M
 
     ** Map **
 
-    A Leaflet Map was created which takes the total count of movies produced in a particular country and highlights the specific country. 
+    A Leaflet Map was created which takes the total count of movies produced in a
+    particular country and highlights the specific country. 
 
 
     ** Movies Dashboard ** 
     
-    The interactive Movies Dashboard generates a visualization which explores how specific genres are influenced by other metrics, including budget, revenue and voter rating. 
+    The interactive Movies Dashboard generates a visualization which explores how
+    specific genres are influenced by other metrics, including budget, revenue and
+    voter rating. 
 
 
 
