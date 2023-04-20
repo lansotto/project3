@@ -2,120 +2,125 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Movies: Netflix and Chill</title>
-  <!-- REMEMBER TO CHANGE NAME OF HTML FILE TO MATCH -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-  <a href="#">OUR STORY / Our Details / Summary</a> <a href="#">Map</a> <a href="#">Chart Visualizations / Movie Dashboard</a>
-<head>
+    <title>Movies: IMDb and Chill</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <style>
+        .mySlides {display:none;}
+    </style>
+</head>
 
 <body>
-<!-- Navigation Bar -->
+    <!-- <div class="w3-container">
+        <h2 style= "text-align:center; font-size:300%; font-weight:bold">Movies: IMDb & Chill</h2>
+    </div> -->
+
+    <!-- Navigation Bar -->
     <div class="w3-top">
         <div class="w3-bar w3-black w3-card">
-        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="#OUR STORY / Our Details / Summary / Overview" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-        <!-- <a href="#OUR STORY / Our Details / Summary / Overview" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OUR STORY / Our Details / Summary / Overview</a> -->
-        <a href="#Map" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MAP</a>
-        <a href="#moviesdashboard" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MOVIES DASHBOARD</a>
-        <div class="w3-dropdown-hover w3-hide-small">
-            <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-            <div class="w3-dropdown-content w3-bar-block w3-card-4">
-            <a href="#" class="w3-bar-item w3-button">About Us</a>
-            <a href="#" class="w3-bar-item w3-button">References</a>
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="#home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+            <a href="#map" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MAP</a>
+            <a href="#moviesdashboard" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MOVIES DASHBOARD</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#aboutus" class="w3-bar-item w3-button">About Us</a>
+                    <a href="#acknowledgements" class="w3-bar-item w3-button">Acknowledgements</a>
+                </div>
             </div>
-        </div>
-        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
         </div>
     </div>
+    <br></br>
 
-
-<!-- Page Content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-<!-- Title - Home Page -->
-    <div style="background-color:#f1f1f1;padding:15px;">
-        <h1 style="font-size:300%;text-align:center;">Movies: Netflix and Chill</h1>
-        <!-- <a href="#" style="font-size:150%">OUR STORY / Our Details / Summary / Overview </a> |
-        <a href="#map" style="font-size:150%">Map</a> |
-        <a href="#moviedashboard" style="font-size:150%">Chart Visualizations / Movie Dashboard</a> -->
+    <!-- Title - Home Page -->
+    <div style="background-color:#f1f1f1; padding:20px;">
+        <h1 style="font-size:350%;text-align:center;font-weight:bold">Movies: IMDb and Chill</h1>
     </div>
-      <br></br>
-      <br></br>
 
+    <!-- Image Carousel for Favourite Moviess-->
+    <div class="w3-content w3-section" style="max-width:800px">
+        <img class="mySlides" src="https://c4.wallpaperflare.com/wallpaper/862/449/162/jack-reacher-star-wars-interstellar-movie-john-wick-wallpaper-preview.jpg" style="width: 100%">
+        <img class="mySlides" src="https://wallpaperaccess.com/full/329583.jpg" style="width:100%">
+        <img class="mySlides" src="https://cdn.wallpapersafari.com/86/95/Idsx01.jpg" style="width:100%">
+        <img class="mySlides" src="https://wallpapercave.com/wp/wp2751453.jpg" style="width:100%">
+        <img class="mySlides" src="https://images4.alphacoders.com/573/57394.jpg" style="width:100%">
+        <img class="mySlides" src="https://c4.wallpaperflare.com/wallpaper/726/46/535/movies-hollywood-movies-wallpaper-preview.jpg" style="width:100%">
+        <img class="mySlides" src="https://wallpaper.dog/large/20501795.jpg" style="width:100%">
+    </div>
+      
+    <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 3 seconds
+      }
+    </script>
+    <br></br>
 
-<!-- Main Page - Home -->
-    <div class="row">
-        <h1 style="text-align:center">OVERVIEW / OUR STORY / Our Details / Summary</h1>
+    <div class="w3-content" style="max-width:2000px; margin-top:46px">
+        <div class="w3-info">
+            <h2 style="text-align:center; font-size:250%; font-weight:bold;">Movies Info</h2>
+            <p style="font-size:200%"> Movies: IMDb and Chill is a Python Flask-powered API that summarizes and compares 
+                movies characteristics over the years in a visual manner. We obtained the dataset from Kaggle, which is a database
+                comprised of nearly 5000 movies between the years 1916 and 2017. Some of the criteria summarized and compared are 
+                genres, budget, revenue, vote count and production countries.
+            </p>
+        </div>
+        <br></br>
+        <br></br>
+        
+        <div class="w3-tools">
+            <h2 style='text-align:center; font-size:250%; font-weight:bold'>Tools & Technology</h2>
+                    <p style="font-size:200%;">Below outline some of the tools and technologies we used to create 
+                        Movies: IMDb and Chill.
+                        <ul style="font-size:175%;text-align:left;">
+                            <li>Python</li>
+                            <li>Flask</li>
+                            <li>JavaScript</li>
+                            <li>D3</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                        </ul>
+                    </p>
+        </div>
+        <br></br>
+            
+        <div class="w3-biases">
+            <h2 style='text-align:center; font-size: 250%; font-weight:bold'>Biases & Further Considerations</h2>
+                    <p style="font-size:200%; text-align:left;"> Some factors that we should consider when analyzing this dataset. 
+                        <ul style="font-size:175%; text-align:left;">
+                            <li>Revenue currency is not provided</li>
+                            <li>Data quality analysis has not been performed</li>
+                            <li>Missing budgets were provided a value of zero</li>
+                            <li>Selection bias: dataset is not a full depiction of all movies 
+                                (i.e., independent films)</li>
+                        </ul>
+                    </p>
+        </div>
     </div>
     <br></br>
     <br></br>
-    
-    <div class="overview">
-        <h2 style='text-align:center; font: size 250%'>Movie Informatics / Movies Info</h2>
-        <p style="font-size:200%"> This repository summarizes and compares the genres of movies over years in a visual
-        manner. We obtained data from kaggle and created the plots based on yearly 
-        data for movies from 1916 to 2017. Some of the criteria summarized are genres, budget, 
-        revenue, voter counts and production countries. </p>
-        <img src="img_5terre.jpg" style="width:100%">
-    </div>
-    
-    <div class="row">
-        <div class="col-sm-4">
-            <h2 style='text-align:center; font: size 250%'>Tools & Technology</h2>
-            <p style="font-size:200%">Below are some of the tools and technologies used to create this repository:
-                <ul style="font-size:175%">
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                    <li>MongoDB</li>
-                    <li>HTML</li>
-                </ul>
+
+    <footer class="w3-container-fluid text-center">
+        <div style="background-color:#f1f1f1; padding:50px;">
         </div>
-        <div class="col-sm-4">
-            <h2 style='text-align:center; font: size 250%'>Biases</h2>
-            <p style="font-size:200%"> As identified by Kaggle </p>
-        </div>
-        <div class="w-100"></div>
-        <div class="col-sm-4">
-            <h2 style='text-align:center; font: size 250%'>About Us</h2>
-            <p style="font-size:200%"> We are comprised of four data analysts looking to explore our abilities within
-                data analytics using an interactive visualizations. </p>
-        </div>
-        <div class="col-2">
-            <h2 style='text-align:center; font: size 250%'>Relevance/ Importance</h2>
-            <p style="font-size:200%"> We chose this project...  </p>
-        </div>
-    <br></br>  
-    <div class="row">
-        <div class="col-md-12">
-            <h2 style="text-align:center; font: size 250%">References and Shout Outs</h2>
-            <p style="font-size:200%"> *** </p>
-    </div>
-
-<!-- Map
-    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="map">
-        <h2 class="w3-wide">MAP</h2>
-        <p></p>
-    </div> -->
-
-<!-- Chart Visualizations / Movie Dashboard
-    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="moviedashboard">
-        <h2 class="w3-wide">Chart Visualizations / Movie Dashboard</h2>
-        <p></p>
-    </div> -->
-
-<!-- End Page Content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-large">
-  <!-- <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
-</footer>
-
+    </footer>
+      
 </body>
 </html>
+      
