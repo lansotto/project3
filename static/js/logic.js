@@ -51,18 +51,24 @@ function redraw(genre) {
 }
 
 function redraw1(filteredData) {
-        Budget_array = []
-        Revenue_array = []
+        Budget_array = [];
+        Revenue_array = [];
+        Title_array = [];
 
         filteredData.map((row_data) => {
-            Budget_array.push(row_data.budget)
-            Revenue_array.push(row_data.revenue)
+            Budget_array.push(row_data.budget);
+            Revenue_array.push(row_data.revenue);
+            Title_array.push(row_data.title);
         });
 
         // Build a Budget vs Revenue scatter plot
         let Scatter_Plot = {
             x: Budget_array,
             y: Revenue_array,
+            text: Title_array,
+            marker: {
+                color: 'rgb(0, 255, 0)',
+            },
             mode: 'markers',
             type: 'scatter' 
         };
@@ -76,16 +82,18 @@ function redraw1(filteredData) {
             height: 0.5
         };
         
-        Plotly.newPlot("scatter1", [Scatter_Plot], [layout]);
+        Plotly.newPlot("scatter1", [Scatter_Plot], layout);
 }
 
 function redraw2(filteredData) {
-        VoteAvg_array = []
-        Revenue_array = []
+        VoteAvg_array = [];
+        Revenue_array = [];
+        Title_array = [];
 
         filteredData.map((row_data) => {
-            VoteAvg_array.push(row_data.vote_average)
-            Revenue_array.push(row_data.revenue)
+            VoteAvg_array.push(row_data.vote_average);
+            Revenue_array.push(row_data.revenue);
+            Title_array.push(row_data.title);
         });
 
 
@@ -93,20 +101,21 @@ function redraw2(filteredData) {
         let Scatter_Plot_2 = {
             x: VoteAvg_array,
             y: Revenue_array,
+            text: Title_array,
             mode: 'markers',
             type: 'scatter' 
         };
 
         // Setup the layout
         let layout = {
-            title: "Average vote vs Revenue of Movies",
+            title: "Average Vote vs Revenue of Movies",
             xaxis: {title: "Average Vote (out of 10)"},
             yaxis: {title: "Movie Revenue"},
             width: 0.5,
             height: 0.5
         };
 
-        Plotly.newPlot("scatter2", [Scatter_Plot_2], [layout]);  
+        Plotly.newPlot("scatter2", [Scatter_Plot_2], layout);  
 }
 
     
