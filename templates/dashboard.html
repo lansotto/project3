@@ -13,26 +13,27 @@
 </head>
 
 <body>
-<div style="background-color:#ffffff;padding:20px;">
     <!-- Navigation Bar -->
-    <div class="w3-top">
-      <div class="w3-bar w3-black w3-card">
-        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
-          onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="#home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-        <a href="#map" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MAP</a>
-        <a href="#moviesdashboard" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MOVIES DASHBOARD</a>
-        <div class="w3-dropdown-hover w3-hide-small">
-          <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
-          <div class="w3-dropdown-content w3-bar-block w3-card-4">
-            <a href="#aboutus" class="w3-bar-item w3-button">About Us</a>
-            <a href="#acknowledgements" class="w3-bar-item w3-button">Acknowledgements</a>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i><b>TMDB & Chill</b></a>
+      <div class="w3-right w3-hide-small">
+          <a href="/map.html" class="w3-bar-item w3-button">Map</a>
+          <a href="about.html" class="w3-bar-item w3-button">About</a>
+          <div class="w3-dropdown-hover">
+              <button class="w3-button">More</button>
+
+<div class="w3-dropdown-content w3-bar-block w3-card-4 w3-dropdown-top-left" style="background-color: #fff; min-width: 200px; padding: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 4px;">
+<a href="index.html#Overview" class="w3-bar-item w3-button">Overview</a>
+<a href="index.html#Biases" class="w3-bar-item w3-button">Biases</a>
+<a href="index.html#Contact" class="w3-bar-item w3-button">Contact</a>
+</div>
+
+              </div>  
           </div>
-        </div>
-        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
-            class="fa fa-search"></i></a>
       </div>
-    </div>
+  </div>
+</div>
     <br></br>
 
     <!-- Movie Dashboard Page Title -->
@@ -49,6 +50,7 @@
             <select id="selDataset" onchange="redraw(this.value)"></select>
           </div>
         </div>
+        <div class="row"></div> <!-- Add an empty row here -->
         <div class="col-md-5">
           <div id="scatter1"></div>
         </div>
@@ -59,14 +61,13 @@
           <div id="line"></div>
         </div>
       </div>
-      <div class="row">
-      </div>
+      <div class="row"></div> <!-- Add another empty row here -->
     </div>
+    
 
     <!-- Footer -->
-    <div style="background-color:#ffffff;padding:20px;"></div>
     <footer class="w3-container-fluid text-center">
-      <div style="background-color:#ffffff;padding:20px;"></div>
+      <div style="background-color:#f1f1f1;padding:50px;">
       </div>
     </footer>
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+​
 <head>
   <title>TMDB and Chill</title>
   <meta charset="utf-8">
@@ -8,47 +8,51 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://www.w3schools.com/lib/w3.js"></script>
-
+​
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
   crossorigin="" />
-
+​
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="static/css/style.css">
-
+​
   <!-- Leaflet Plugin -->
   <title>Leaflet.Control.Opacity example</title>
-
+​
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <link href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" rel="stylesheet" />
-
+​
   <script src="plugin/Leaflet.Control.Opacity/dist/L.Control.Opacity.js"></script>
   <link href="plugin/Leaflet.Control.Opacity/dist/L.Control.Opacity.css" rel="stylesheet" />
 </head>
-
+​
 <body>
-  <!-- Navigation Bar -->
-  <div class="w3-top">
-    <div class="w3-bar w3-black w3-card">
-        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="#home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-        <a href="#map" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MAP</a>
-        <a href="#moviesdashboard" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MOVIES DASHBOARD</a>
-        <div class="w3-dropdown-hover w3-hide-small">
-            <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-            <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                <a href="#aboutus" class="w3-bar-item w3-button">About Us</a>
-                <a href="#acknowledgements" class="w3-bar-item w3-button">Acknowledgements</a>
-            </div>
-        </div>
-        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-    </div>
+   <!-- Navigation Bar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="/templates/index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i><b>TMDB & Chill</b></a>
+      <div class="w3-right w3-hide-small">
+          <a href="/templates/dashboard.html" class="w3-bar-item w3-button">Dashboard</a>
+          <a href="/templates/about.html" class="w3-bar-item w3-button">About</a>
+          <div class="w3-dropdown-hover">
+              <button class="w3-button">More</button>
+​
+<div class="w3-dropdown-content w3-bar-block w3-card-4 w3-dropdown-top-left" style="background-color: #fff; min-width: 200px; padding: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 4px;">
+<a href="/templates/index.html#Overview" class="w3-bar-item w3-button">Overview</a>
+<a href="/templates/index.html#Biases" class="w3-bar-item w3-button">Biases</a>
+<a href="/templates/index.html#Contact" class="w3-bar-item w3-button">Contact</a>
+</div>
+​
+              </div>  
+          </div>
+      </div>
   </div>
+</div>
   <br></br>
-
+​
   <!-- Map Page Title -->
-  <div style="background-color:#f1f1f1;padding:20px;">
+  <div style="background-color:#51bee9;padding:20px;">
     <h1 style="font-size:300%;text-align:center">Map</h1>
   </div>
   <br></br>
@@ -64,13 +68,13 @@
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <!-- Our JavaScript -->
   <script type="text/javascript" src="static/js/map.js"></script>
-
-
+​
+​
 <br></br>     <br></br>     <br></br>     <br></br>     <br></br>     <br></br>     <br></br> 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-large">
-
+​
 </footer>
-
+​
 </body>
 </html>
