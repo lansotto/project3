@@ -41,7 +41,7 @@ function createMap(movies) {
         "Street Map": streetmap,
         'Mierune Colour': m_color,
         'Mierune Mono': m_mono,
-        'GSI Ort': t_ort,
+        //'GSI Ort': t_ort,
         //  'OSM': o_std,
         'GSI Pale': t_pale,
     };
@@ -54,7 +54,7 @@ function createMap(movies) {
 
     var map = L.map("map", {
         center: [38.9637, 35.2433],
-        zoom: 2,
+        zoom: 2.5,
         layers: [streetmap, m_mono, o_std, t_pale, t_ort, movies]
     });
 
