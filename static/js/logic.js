@@ -19,11 +19,6 @@ d3.csv(movie_csv).then(function (data) {
 
     })
 
-    DropDownMenu
-        .append("option")
-        .property("value", "")
-        .text("Action");
-
     genre_array.sort();
 
     // Add the samples to dropdown menu
@@ -67,7 +62,7 @@ function redraw1(filteredData) {
             y: Revenue_array,
             text: Title_array,
             marker: {
-                color: 'rgb(0, 255, 0)',
+                color: 'rgb(0, 200, 0)',
             },
             mode: 'markers',
             type: 'scatter' 
@@ -78,6 +73,7 @@ function redraw1(filteredData) {
             title: "Budget vs Revenue of Movies",
             xaxis: {title: "Movie Budget"},
             yaxis: {title: "Movie Revenue"},
+            //regression: 'line',
             width: 0.5,
             height: 0.5
         };
@@ -152,5 +148,12 @@ function redraw3(filteredData) {
             height: 0.5 
         };
         
-        Plotly.newPlot("line", [Line_Plot]); 
+        // Setup the layout
+        let layout = {
+            title: "Number of Movies released per Year",
+            xaxis: {title: "Year of Release"},
+            yaxis: {title: "Number of Movies"},
+        };
+
+        Plotly.newPlot("line", [Line_Plot], layout); 
 }
