@@ -14,7 +14,7 @@ Table of Contents
 ## Background
   
 
-TMDB and Chill is a Python Flask-powered API that summarizes and compares movies characteristics over the years in a visual manner. We obtained the dataset from Kaggle, which is a database comprised of nearly 5000 movies between the years 1916 and 2017. The criteria summarized and compared are genres, budget, revenue, voter rating (vote average) and production countries.
+TMDB and Chill is a Python Flask-powered API that summarizes and compares movies characteristics over the years in a visual manner. We obtained the dataset from Kaggle, which is a database comprised of nearly 5000 movies between the years 1916 and 2016. The criteria summarized and compared are genres, budget, revenue, voter rating (vote average) and production countries.
 
 We wanted to draw comparisons between movie genres and determine if there are any differences between genres according to budget, revenue and voter rating. 
 
@@ -29,6 +29,7 @@ Below outline some of the tools and technologies we used to create TMDB and Chil
 * Flask
 * SQLite
 * Javascript
+* Node.js
 * D3
 * CSS
 * HTML
