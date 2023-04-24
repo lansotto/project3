@@ -2,109 +2,129 @@
 <html lang="en">
 
 <head>
-    <title>TMDB and Chill</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <script src="map.js"></script>
+  <title>TMDB and Chill</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: 300px; /* Should be removed. Only for demonstration */
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+    </style>
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-      <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i><b>TMDB & Chill</b></a>
+  <!-- Navigation Bar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i><b>TMDB &
+          Chill</b></a>
       <div class="w3-right w3-hide-small">
-          <a href="/map.html" class="w3-bar-item w3-button">Map</a>
-          <a href="dashboard.html" class="w3-bar-item w3-button">Dashboard</a>
-          <div class="w3-dropdown-hover">
-              <button class="w3-button">More</button>
+        <a href="/map.html" class="w3-bar-item w3-button">Map</a>
+        <a href="dashboard.html" class="w3-bar-item w3-button">Dashboard</a>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button">More</button>
 
-<div class="w3-dropdown-content w3-bar-block w3-card-4 w3-dropdown-top-left" style="background-color: #fff; min-width: 200px; padding: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 4px;">
-<a href="index.html#Overview" class="w3-bar-item w3-button">Overview</a>
-<a href="index.html#Biases" class="w3-bar-item w3-button">Biases</a>
-<a href="index.html#Contact" class="w3-bar-item w3-button">Contact</a>
-</div>
-
-              </div>  
+          <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-dropdown-top-left"
+            style="background-color: #fff; min-width: 200px; padding: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 4px;">
+            <a href="index.html#Overview" class="w3-bar-item w3-button">Overview</a>
+            <a href="index.html#Biases" class="w3-bar-item w3-button">Biases</a>
+            <a href="index.html#Contact" class="w3-bar-item w3-button">Contact</a>
           </div>
-      </div>
-  </div>
-</div>
-    <br></br>
 
-    <!-- About Us Page Title -->
-    <div style="background-color:#51bee9;padding:20px;">
-        <h1 style="font-size:300%;text-align:center">About Us</h1>
-    </div>
-    <br></br>
-
-    <!-- Members -->
-    <div id="members" class="w3-container w3-padding-32">
-    <div class="w3-row w3-center">
-        <table class="center">
-            <tr style="font-size:200%;">
-              <th>Lan Trinh</th>
-              <th>Anumta Khan</th>
-            </tr>
-            <tr>
-              <td>
-                <ul style="list-style-type:none; font-size:150%">
-                    <img src="https://lh3.googleusercontent.com/pw/AJFCJaXrcEmv1zPPa_mZ-mkIPWx-Yt66lXYvUE14LeLgv-b1ExN8ex21Qrp47tT1T_IVfbNBDfHx95YJc9nyiu70ObGj_JtkQ4bIhwI9tb6NcSBaRqMqNzuazUKCktZlTba8eoBzAqqO55huZXl2Hgn8qqAmiwAiEA8XaAToNsygxsl60Pqe6I2mq0BK3do12Cqu2Wac1IutvxmTAYAaagTolRNM3Tev-FbuQ_qoElfTgqEEZ1ympX1JtWyeMhqLkWu8jD84G6Cor33ZUbOtkh19KBiikoajR-TrOs9dBbjXBz2zvXdVy41hjsblUpZ_O38c1DhRRbyfOmSmq6dV8yvHx77rKFCFnIGvjsS_cyNpKpbPHjkHf3S43ghwkm7O-oxjv8f-lZiC5obV0RTZdcFR6sI5xLJ-i3CmivUeHwjYu65pSG5rRNWGS5ZpZXNwTATlEHiDJ7Nwsg6_vRPA0PTt8VqVlmmneKk1wqzXCIZxbAVbJnUOeqYBSuOeHV-K9aEZN0fZ7UE43YCPvzeuF65E21bsmk0rBisepHYSCmn9bTKQaGlK4hPIt2Iy3C518G4jiR3vAjbvo_M9g2KBgK_YK-cgtsgopAIpjYDRi2quZRCrhGHVg5U5UpaoAUvJu6ROU4rTqc6ef4JX_-8pER3Zds20TOCGdUkb04qRNhVZ_Uzv2MjeCdWsn76wu4sdKtgBpFyoS1sd2V-ZJ9VNk6ff8b9IYhBoiy2cLH1JMCH-WkFBKObJ8C6FlncdxyJd7X0Kj0qC_IvbN9IrHIecg7jkbS-8rIUeyfRLcLKfPfwujG7tVjvoduUwExuj9ZFsGvSwh89Afk1AY_V39sLqgWZoIJCW0PaC4z2D6ggqGXKUihxk9mC7WhPM4AHlqb2NfzAIY0NCjuGIz8t2pZY7uZuaddxbNT0ycxXTZLAttFbAIurx74-BgcfHOsvoZjK0QA=w1400-h1400-s-no?authuser=0" style="width:20%">
-                    <li>About: Financial Analyst, Wannabe Data Analyst</li>
-                    <li>Likes: Cliff jumping</li>
-                    <li>Something Interesting: Cannot bake a cake but makes a perfect souffle</li>
-                    <br></br>
-                    <br></br>
-                </ul>
-              </td>
-              <td>
-                <ul style="list-style-type:none; font-size:150%">
-                    <img src="https://lh3.googleusercontent.com/pw/AJFCJaXy33zFsI-UVmV1JjKILmOG3rYhoQcze4EwRT_NVxuoJv-ZPzYYjuoTSQl9Oy3L05ytlYuW8pnJ2eaRXbcWg6Wl57tPV1aVUO90xrIHupxYwHokyqGgKZuOBvVfWqHu_XjqWLEScPkGMIIuQan02e_NtUPzwzuNK0iXGY6oAhCrpQzdqoI7UcoVMpmePFRifXlNe6kTi_RlDO72EGEwmE3HhcQOBwaEyHolCgX9VGRlG0g8vJBXEppIPXzyaYp9Jl7DYfF_1ZaksaqAiPRyPF3FhOO3LLbdqZBufeDNdiHw_3EZKx0ezO4Z20NDv3XmumaW1Y7jNIgG11gAWGRJO3igrGGkC6ekmr-M7GzqVp14qSNtHldWVW92zOJRrSzEQELay5ZJDljSfBfUZF17ZAZmb9vVFQmDPLUp-gzwepyGPgQiewCTVhcjMtbNDV4baetoIAE3fAl_1BimdLw1kqU93xnASckwRxXdN870jXaIkuO3moDBNag7BSN1KZ4hx4s__bRs22oO_RtUl18If4yuZcFqjhCY_kJ7eeY67Jq15n1R7Piy5sKlh2VUUtrsRkplW1FAjNTsgQjrxfMG68DHrXjVAxEyucg8z665JWT7yumhMeWBxW-noBjjB-FWOJWEvCT8LQsuVQUsST3gYyaj5kpYcW5SAmI-Y664foy72F_heH9nNUg1-AjHTg82Lz5x180Vx-Qc8pve3bmpKMzbtH4fb8lT9CzdwKH0QPV7x3vusww-H2Ezd5Nu1kEUUKZos88Yrh-C5YUGrjSpMfhrQ0JBAfhY9IFEL8RRffN0La_gXWRzAfcOHusoUH-FMHbgDnCRgXwJTu61z8Va3F5WUY1_l-CIsDeNhfo1mrw5yzew-Pnf3A2K6cdvRhGUyIcdVJSSJqk25HmkJvABHHMQtxx66ZHmaN76NwCUt8hVt5-UOpeepcx_okMJqQ=w153-h153-s-no?authuser=0" style="width:40%">
-                    <li>About: Data Scientist at IBM</li>
-                    <li>Likes: Cliff jumping</li>
-                    <li>Something Interesting: Swam with sharks</li>
-                    <br></br>
-                    <br></br>
-                </ul>
-              </td>
-            </tr>
-            <tr style="font-size:200%;">
-                <th>Tejas Sharma</th>
-                <th>Tiara Mardosas</th>
-            </tr>
-            <tr>
-              <td>
-                <ul style="list-style-type:none; font-size:150%">
-                    <img src="https://lh3.googleusercontent.com/pw/AJFCJaX8uyPAfGPQE27ZOpibWaPxkfsKM9_EeylmQfCFfZj5ce7yhUZcgzwQsB2zkPrIPYAm_VY0o7elnfFpVuwM9KNMH2CQfHEXzq6a073fEwT-8bRKgtR4RkJ0hNXU9MzROz1PAnRzmxHyqsmOxMZPZ9LBbh1JcnL6jWdZ-G9u0q2NOx9Vlvdb9ebTJqDhg2bvH8ekUXKTt9pHM8l0TmcClQZ5kWA-ki8PDX4CSVaBfwwQHs3KWSfJ5LEF5k9n3MutMNpcaBstzrUSKpAttEt2D33el8cfFH91wo1NduTyst9lru9XEVHKEXoa-VGOI05mrauIhwTIChJHYPzFJP_QeGdfomgv8iNYks1A_po1-tTbxQeFEj2yW_zGbN8Y9SoSmX32q6WnItDMRn1w7FT1gKDpWkNz9ylHuikuDZ-VLze3DVvROTeSEHWIDN4vrnxAySFrhL98s_WecyysSC1nqlspF0cP1u4h7aZGrGxj24Rx5yLGMIU7beeZMa0zxtTzf7OpY5DnEs76K47Zzc_SuxMVI0nHGVhrz6DqOvUe_t04Tqg7gVJ0-MbRlTXs8bL7hi5-3ype3jpSJeeMiouYavVQn1R34S-uFxrzo_uSu62pQNyy8Z8n6ppqnuboWuGcscTOXOSK3iBUV5jyBN7n9EQ9uV_v5OXiPVAPrAnH16_kgQLh8OZugAqOxNOQZkYWsbnjR8ti8Jp8-ajPvMHGbPHnk5Nc7OF7D86-tSZBaHDbBjAFoOh9FzyzzAJTi9rDucRAu16itqQWoyvG4qaexmPkqTR8N2WLpgOvok4Gp3atUNPFTKHLLDKqWn-RR215Bnc7Naq-nQd7QAg2fCGQW2o13tlvnPwt5fxtlPd6UgWhTP1b3zilhE7cewv1vz_GNXMRyfQEHSpDyjv-X0blgzw2LtP-G_jQoVl-TBaOuf82Ynxje5lYW14tlF4k2Q=w637-h669-s-no?authuser=0" style="width:20%">
-                    <li>About: The Sailor Man & Future Data Analyst</li>
-                    <li>Likes: Sailing, swimming, travelling and learning new skills</li>
-                    <li>Something Interesting: Travelled more than 20 countries</li>
-                    <br></br>
-                </ul>
-              </td>
-              <td>
-                <ul style="list-style-type:none; font-size:150%">
-                    <img src="https://lh3.googleusercontent.com/pw/AJFCJaWMf1qbauJmBaxFD1z_YHIvEFqX5WlH1qut7SlcPZS5BpM4ORi5dOCTm1fpL8aBlINd7t4_WMcL1hTnjFko79C0si8XEq34GmUE-BKKAZwc55PlJ61fN8MQXkmLSZINTTi2lJXVQ6XCCDS93l8YcpbcMbUbeFAUip2uOXLqGzttgN4z9pRY7naYwvM4uOjuINmhn7q40vA8gfGnedDkSnGHYNxWsHkpR6AHCHbJdAkt8Lpo1Y36uX7q8NoNs7W93ArCfkTkFTILT3HZlSd7OIVzBieQYniZuZ0gOdwN5Em7uSAuEKd3L3598mKxnF9veO9ZQBygiAwPNibeKPrZ2YX4u-bJO8WLGMwZaWwPS3oAh0WDjzWjOI3UIjaKnR4XBhHdgl_NWpt3KRLkwuSDOmF7LGv_GWo0FIv5bznKzv4j3rSz9i9Nz1BykCimXBUC30u2qADlXvq-TH9FFF4JQOGIgEHe58kmpP_Onn8oWPW67gw3FuKJzuD2l61Z-oN3DNdaj0YHom5ygORiuiJtY5Gb8LtFxJtqBSW2MF5oNgXyOf-Cl8iwp5C1t6gBGzhCAM7hQdmzr-FKUVHhZ9tKskkaRIy-PDHLgpUTC1T82o6NZDMazbHNJAq9mU2Uv80gpM9ORnzrz5eiDljYJVvrFn2ReQV4jAxVCae07JKa4lA3rDiwdt7ojf4Eslgpiaz_c_Vs4aesk5UvMx_2t2qmgmN-A3kVVlNYqZ5FkHNfS915BZ6lp2ovRk-ukfjp9TJIY6O0HxktgBLsV_fxhl9D9-Z8zjcIcgdTH0pAbCRfPpXu-NjtVcEpLsK-d0p55aJEXKiX0Hc_jspqOx0yUg0WrfWIHkGem6YrrbA8dFJKMT7FkxniotzqV_eFXv0nD7_n4Rs5LiT7tXEwaXucwGJx_SrG__P3wbcwzUVgeFEBVAeTNeHUmAB7A3XJDqAmiA=w227-h227-s-no?authuser=0" style="width:40%">
-                    <li>About: Therapist for Olympic Athletes, Future Data Analyst</li>
-                    <li>Likes: Baking</li>
-                    <li>Something Interesting: Went hang gliding in the Swiss Alps</li>
-                    <br></br>
-                </ul>
-              </td>
-            </tr>
-          </table>
-    </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="w3-container-fluid text-center">
-        <div style="background-color:#f1f1f1;padding:50px;">
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br></br><br>
+
+  <!-- About Us Page Title -->
+  <div style="background-color:#51bee9;padding:20px;">
+    <h1 style="font-size:300%;text-align:center">About Us</h1>
+  </div>
+  <br></br>
+
+  <!-- Members -->
+  <div class="row">
+    <div class="column">
+      <h2 style="text-align:center; font-size:300%"><strong>Lan Trinh</strong></h2>
+      <img src="../Photos/lsphoto.jpeg" style="width:30%;" class="center">
+      <ul style="list-style-type:none; font-size:150%; text-align:center;">
+        <li><strong>About:</strong> Financial Analyst, Wannabe Data Analyst</li>
+        <li><strong>Likes:</strong> Cliff jumping</li>
+        <li><strong>Something Interesting:</strong> Cannot bake a cake but makes a perfect souffle</li>   
+      </ul>
+    </div>
+    <div class="column">
+      <h2 style="text-align:center; font-size:300%"><strong>Anumta Khan</strong></h2>
+      <img src="../Photos/akphoto.jpeg" style="width:30%" class="center">
+      <ul style="list-style-type:none; font-size:150%; text-align:center;"">
+        <li><strong>About:</strong> Data Scientist at IBM</li>
+        <li><strong>Likes:</strong> Cliff jumping</li>
+        <li><strong>Something Interesting:</strong> Swam with sharks</li>   
+      </ul>
+    </div>
+  </div>
+  <br></br> <br></br> <br></br>  <br></br> <br></br> <br></br>   <br></br> <br></br> <br></br>   
+  <div class="row">
+    <div class="column" class="center">
+      <h2 style="text-align:center; font-size:300%"><strong>Tejas Sharma</strong></h2>
+      <img src="../Photos/tsphoto.jpeg" style="width:30%;" class="center">
+      <ul style="list-style-type:none; font-size:150%; text-align:center;">
+        <li><strong>About:</strong> The Sailor Man & Future Data Analyst</li>
+        <li><strong>Likes:</strong> Sailing, swimming, travelling and learning new skills</li>
+        <li><strong>Something Interesting:</strong> Travelled more than 20 countries</li>
+        <br></br>
+        <br></br>
+        <br></br>
+      </ul>  
+    </div>
+    <div class="column">
+      <h2 style="text-align:center; font-size:300%"><strong>Tiara Mardosas</strong></h2>
+      <img src="../Photos/tmphoto.jpg" style="width:30%" class="center">
+      <ul style="list-style-type:none; font-size:150%; text-align:center;">
+        <li><strong>About:</strong> Therapist for Olympic Athletes, Future Data Analyst</li>
+        <li><strong>Likes:</strong> Baking</li>
+        <li><strong>Something Interesting:</strong> Went hang glisding in the Swiss Alps</li>
+        <br></br>
+      </ul>
+    </div>
+  </div>
+  <br></br> <br></br> <br></br>  <br></br> <br></br> <br></br>  <br></br> <br></br> <br></br>
+ 
+
+  <!-- Footer -->
+  <footer class="w3-container-fluid text-center">
+    <div style="background-color:#51bee9;;padding:50px;">
+    </div>
+  </footer>
 
 </body>
+
 </html>
