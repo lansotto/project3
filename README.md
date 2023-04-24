@@ -19,7 +19,6 @@ TMDB and Chill is a Python Flask-powered API that summarizes and compares movies
 We wanted to draw comparisons between movie genres and determine if there are any differences between genres according to budget, revenue and voter rating. 
 
 
-
 ## Tools & Technology
 
 
@@ -53,6 +52,12 @@ The Python Flask API runs two main components from the 'Home' page, 'Map' and 'M
     specific genres are influenced by other metrics, including budget, revenue and
     voter rating. 
 
+Please see the screenshots of our Visualization below:
+
+![Homepage](https://user-images.githubusercontent.com/119235680/234139739-326db13f-7294-4a4e-acdb-2b358c7015ba.png)
+![Dashboard](https://user-images.githubusercontent.com/119235680/234139766-2f8604b5-f531-4e31-8592-4b6ce4b6e732.png)
+![Map](https://user-images.githubusercontent.com/119235680/234139776-e0131ac2-7e70-4f30-9e88-310d284b2083.png)
+![About us](https://user-images.githubusercontent.com/119235680/234139783-0d77893d-30d9-483c-8a49-caa09c32f2ef.png)
 
 
 ## References & Acknowledgements
